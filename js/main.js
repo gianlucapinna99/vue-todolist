@@ -1,3 +1,5 @@
+"use strict"
+
 const app = Vue.createApp({
   data() {
     return {
@@ -13,6 +15,9 @@ const app = Vue.createApp({
     },
     deleteTask(index) {
       this.tasks.splice(index, 1);
+    }
+    toggleDone(task) {
+      task.done = !task.done;
     }
   }
 });
