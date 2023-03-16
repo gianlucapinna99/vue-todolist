@@ -16,9 +16,9 @@ const app = Vue.createApp({
     deleteTask(index) {
       this.tasks.splice(index, 1);
     }
-    toggleDone(task) {
-      task.done = !task.done;
-    }
+    // toggleDone(task) {
+    //   task.done = !task.done;
+    // }
   }
 });
 
